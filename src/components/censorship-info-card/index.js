@@ -9,7 +9,7 @@ const CensorshipInfoCard = ({ count, name }) => (
 );
 
 CensorshipInfoCard.propTypes = {
-  alpha2: PropTypes.string.isRequired,
+  alpha_2: PropTypes.string.isRequired,
   count: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
 };

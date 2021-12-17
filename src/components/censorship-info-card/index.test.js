@@ -4,11 +4,11 @@ import { render, screen } from "@testing-library/react";
 
 test("CensorshipInfoCard rendering", () => {
   const props = {
-    alpha2: "AU",
+    alpha_2: "AU",
     count: 12000,
     name: "Australia",
   };
-  const countPropRegex = new RegExp(props.count, "i");
+  const countPropRegex = new RegExp(props.count.toLocaleString(), "i");
   const namePropRegex = new RegExp(props.name, "i");
 
   render(<CensorshipInfoCard {...props} />);
